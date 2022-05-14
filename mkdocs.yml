@@ -1,0 +1,87 @@
+site_name: pm01
+extra_css: [style.css]
+repo_url: https://github.com/pmtmrw/pm101
+site_url: https://pmtmrw.github.io/pm01
+site_description: pmtmrw blog
+site_author: pmtmrw
+use_directory_urls: false
+nav:
+  - Trang chủ:
+    - Index: index.md
+  - Hướng dẫn:
+      - Function as a Model VN: guide/function-classifier/function-classifier.md
+      - Human Preprocessing VN: guide/function-preprocess/function-preprocessing.md
+      - Drawing as a Model VN: guide/drawing-classifier/drawing.md
+      - Outliers and Comfort VN: guide/finding-outliers/outliers.md
+      - Drawing Features VN: guide/drawing-features/custom-features.md
+  - Api:
+    - Models:
+      - Classification: api/classification.md
+      - Regression: api/regression.md
+      - Outlier: api/outlier.md
+      - Preprocessing: api/preprocessing.md
+    - Interactive:
+      - Charts: api/interactive-charts.md
+    - Utility:
+      - Common: api/common.md
+      - Datasets: api/datasets.md
+      - Rulers: api/rulers.md
+  - Ví dụ:
+    - Model Mining: examples/model-mining.md
+    - Sử dụng: examples/usage.md
+    - FAQ: examples/faq.md
+plugins:
+  - search
+  - i18n:
+      default_language: vi
+      languages:
+        vi: 
+          name: Việt Nam
+          site_name: pm101 Blog
+        en: 
+          name: English
+          site_name: pm101 Blog EN
+      nav_translations:
+        en:
+          Trang chủ: Home page
+          Hướng dẫn: Guides
+          Function as a Model VN: Function as a Model EN
+          Human Preprocessing VN: Human Preprocessing EN
+          Drawing as a Model VN: Drawing as a Model EN
+          Outliers and Comfort VN: Outliers and Comfort EN
+          Drawing Features VN: Drawing Features EN
+          Api: Api EN
+          Models: Models EN
+          Classification: Classification EN
+          Ví dụ: Examples
+          Model Mining: Model Mining EN
+          Sử dụng: Usage
+          FAQ: FAQ EN
+copyright: Copyright &copy; 2022 pmtmrw
+theme:
+  name: material
+  custom_dir: docs/theme/
+  icon:
+    logo: material/library
+  font:
+    text: Ubuntu
+    code: Ubuntu Mono
+  favicon: icon.png
+  logo: icon.png
+  features:
+    - navigation.tabs
+    # - toc.integrate
+    # - toc.follow
+    - navigation.top
+  palette:
+    primary: indigo
+    accent: blue
+markdown_extensions:
+  - codehilite
+  - pymdownx.inlinehilite
+  - pymdownx.details
+  - pymdownx.tabbed
+  - pymdownx.highlight:
+      use_pygments: true
+  - toc:
+      permalink: true
