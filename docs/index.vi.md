@@ -1,129 +1,119 @@
-<img src="logo.png" width=225 align="right">
+## VietNam Zone
 
-# Human Learn hahaha
+Database đơn vị hành chính của Việt Nam
 
-> Machine Learning models should play by the rules, literally.
+Dữ liệu được lấy trực tiếp từ [Tổng Cục Thống Kê Việt Nam](https://danhmuchanhchinh.gso.gov.vn/).
 
-## Project Goal
+Cập nhật lần cuối: 11/04/2022
 
-Back in the old days, it was common to write rule-based systems. Systems that do;
+## 1. Cài đặt
 
-![](examples/rules.png)
+#### 1.1 Cài đặt gói bằng composer
 
-Nowadays, it's much more fashionable to use machine learning instead. Something like;
-
-![](examples/ml.png)
-
-We started wondering if we might have lost something in this transition. Sure,
-machine learning covers a lot of ground but it is also capable of making bad
-decision. We've also reached a stage of hype that folks forget that many
-classification problems can be handled by natural intelligence too.
-
-This package contains scikit-learn compatible tools that should make it easier
-to construct and benchmark rule based systems that are designed by humans. You
-can also use it in combination with ML models.
-
-## Install
-
-You can install this tool via `pip`.
-
-```python
-python -m pip install human-learn
+```shell
+composer require kjmtrue/vietnam-zone
 ```
 
-## Guides
+#### 1.2 Copy file migration
 
-### Tutorial
+```shell
+php artisan vendor:publish --provider="Kjmtrue\VietnamZone\ServiceProvider"
+```
 
-> There is a full course on this tool available on [calmcode.io](https://calmcode.io/human-learn/introduction.html).
-> This is the first video.
+#### 1.3 Chỉnh sửa file migration nếu cần
 
-<iframe src="https://player.vimeo.com/video/463961716" width="100%" height="460" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+Mở các file migration sau và tuỳ chỉnh theo yêu cầu riêng của bạn.
 
-### Getting Started
+```shell
+database/migrations/2020_01_01_000001_create_provinces_table.php
+database/migrations/2020_01_01_000002_create_districts_table.php
+database/migrations/2020_01_01_000003_create_wards_table.php
+```
 
-To help you get started we've written some helpful getting started guides.
+## 2. Chạy migration
 
-1. [Functions as a Model](guide/function-classifier/function-classifier.html)
-2. [Human Preprocessing](guide/function-preprocess/function-preprocessing.html)
-3. [Drawing as a Model](guide/drawing-classifier/drawing.html)
-4. [Outliers and Comfort](guide/finding-outliers/outliers.html)
-5. [Drawing Features](guide/function-classifier/function-classifier.html)
+```shell
+php artisan migrate
+```
 
-You can also check out the API documentation [here](api/classification.html).
+## 3. Import dữ liệu
 
-## Features
+```shell
+php artisan vietnamzone:import
+```
 
-This library hosts a couple of models that you can play with.
+Lưu ý: 
+- Dữ liệu được cập nhật lần cuối: 11/04/2022
+- Để cập nhật dữ liệu mới nhất, vui lòng làm theo hướng dẫn ở mục 5 trước khi chạy lệnh `php artisan vietnamzone:import`
 
-### Interactive Drawings
+## 4. Sử dụng 
 
-This tool allows you to draw over your datasets. These drawings can later
-be converted to models or to preprocessing tools.
+```php
+$provinces = \Kjmtrue\VietnamZone\Models\Province::get();
+$districts = \Kjmtrue\VietnamZone\Models\District::whereProvinceId(50)->get();
+$wards = \Kjmtrue\VietnamZone\Models\Ward::whereDistrictId(552)->get();
+```
 
-![](draw-gif.gif)
+## 5. Tải file dữ liệu
 
-### Classification Models
+Dữ liệu được lấy từ [Tổng Cục Thống Kê Việt Nam](https://danhmuchanhchinh.gso.gov.vn/).
 
-#### FunctionClassifier
+Trong tương lai, khi cơ quan có thẩm quyền sắp xếp lại các đơn vị hành chính thì bạn cần phải tải file dữ liệu mới nhất trước khi import dữ liệu vào dự án của bạn.
 
-This allows you to define a function that can make classification predictions. It's
-constructed in such a way that you can use the arguments of the function as a parameter
-that you can benchmark in a grid-search.
+Bạn vui lòng làm theo các bước hướng dẫn dưới đây:
 
-#### InteractiveClassifier
+- Truy cập: https://danhmuchanhchinh.gso.gov.vn/ (URL này có thể bị [GSOVN](https://www.gso.gov.vn/) thay đổi)
+- Tìm nút "Xuất Excel"
+- Tick vào ô checkbox "Quận Huyện Phường Xã"
+- Click vào nút "Xuất Excel", và tải file xls về
+- Đổi tên file vừa tải về thành `vnzone.xls` và copy vào thư mục `storage` của dự án
+- Chạy lệnh `php artisan vietnamzone:import` ở bước 3
 
-This allows you to draw decision boundaries in interactive charts to create a
-model. You can create charts interactively in the notebook and export it as a
-scikit-learn compatible model.
+## Todo
 
-### Regression Models
+- [ ] Cập nhật dữ liệu
+- [ ] Download file trực tiếp từ website tổng cục thống kê
 
-#### FunctionRegressor
+## Screenshot
 
-This allows you to define a function that can make regression predictions. It's
-constructed in such a way that you can use the arguments of the function as a parameter
-that you can benchmark in a grid-search.
+`select * from provinces`
 
-### Outlier Detection Models
+```
++----+------------------------+--------+---------------------+---------------------+
+| id | name                   | gso_id | created_at          | updated_at          |
++----+------------------------+--------+---------------------+---------------------+
+|  1 | Thành phố Hà Nội       | 01     | 2020-06-16 17:22:30 | 2020-06-16 17:22:30 |
+|  2 | Tỉnh Hà Giang          | 02     | 2020-06-16 17:22:30 | 2020-06-16 17:22:30 |
+|  3 | Tỉnh Cao Bằng          | 04     | 2020-06-16 17:22:30 | 2020-06-16 17:22:30 |
+|  4 | Tỉnh Bắc Kạn           | 06     | 2020-06-16 17:22:30 | 2020-06-16 17:22:30 |
+|  5 | Tỉnh Tuyên Quang       | 08     | 2020-06-16 17:22:30 | 2020-06-16 17:22:30 |
++----+------------------------+--------+---------------------+---------------------+
+```
 
-#### FunctionOutlierDetector
+`select * from districts`
 
-This allows you to define a function that can declare outliers. It's constructed in
-such a way that you can use the arguments of the function as a parameter that you
-can benchmark in a grid-search.
+```
++----+-------------------+--------+-------------+---------------------+---------------------+
+| id | name              | gso_id | province_id | created_at          | updated_at          |
++----+-------------------+--------+-------------+---------------------+---------------------+
+|  1 | Quận Ba Đình      | 001    |           1 | 2020-06-16 17:22:30 | 2020-06-16 17:22:30 |
+|  2 | Quận Hoàn Kiếm    | 002    |           1 | 2020-06-16 17:22:30 | 2020-06-16 17:22:30 |
+|  3 | Quận Tây Hồ       | 003    |           1 | 2020-06-16 17:22:30 | 2020-06-16 17:22:30 |
+|  4 | Quận Long Biên    | 004    |           1 | 2020-06-16 17:22:30 | 2020-06-16 17:22:30 |
+|  5 | Quận Cầu Giấy     | 005    |           1 | 2020-06-16 17:22:30 | 2020-06-16 17:22:30 |
++----+-------------------+--------+-------------+---------------------+---------------------+
+```
 
-#### InteractiveOutlierDetector
+`select * from wards`
 
-This allows you to draw decision boundaries in interactive charts to create a
-model. If a point falls outside of these boundaries we might be able to declare
-it an outlier. There's a threshold parameter for how strict you might want to be.
-
-### Preprocessing Models
-
-#### PipeTransformer
-
-This allows you to define a function that can make handle preprocessing. It's
-constructed in such a way that you can use the arguments of the function as a parameter
-that you can benchmark in a grid-search. This is especially powerful in combination
-with the pandas `.pipe` method. If you're unfamiliar with this amazing feature, you
-may appreciate [this tutorial](https://calmcode.io/pandas-pipe/introduction.html).
-
-#### InteractivePreprocessor
-
-This allows you to draw features that you'd like to add to your dataset or
-your machine learning pipeline. You can use it via `tfm.fit(df).transform(df)` and
-`df.pipe(tfm)`.
-
-### Datasets
-
-#### Titanic
-
-This library hosts the popular titanic survivor dataset for demo purposes. The goal of
-this dataset is to predict who might have survived the titanic disaster.
-
-#### Fish
-
-The fish market dataset is also hosted in this library. The goal of this dataset
-is to predict the weight of fish. However, it can also be turned into a classification problem
-by predicting the species.
+```
++----+--------------------------+--------+-------------+---------------------+---------------------+
+| id | name                     | gso_id | district_id | created_at          | updated_at          |
++----+--------------------------+--------+-------------+---------------------+---------------------+
+|  1 | Phường Phúc Xá           | 00001  |           1 | 2020-06-16 17:30:13 | 2020-06-16 17:30:13 |
+|  2 | Phường Trúc Bạch         | 00004  |           1 | 2020-06-16 17:30:13 | 2020-06-16 17:30:13 |
+|  3 | Phường Vĩnh Phúc         | 00006  |           1 | 2020-06-16 17:30:13 | 2020-06-16 17:30:13 |
+|  4 | Phường Cống Vị           | 00007  |           1 | 2020-06-16 17:30:13 | 2020-06-16 17:30:13 |
+|  5 | Phường Liễu Giai         | 00008  |           1 | 2020-06-16 17:30:13 | 2020-06-16 17:30:13 |
++----+--------------------------+--------+-------------+---------------------+---------------------+
+```
