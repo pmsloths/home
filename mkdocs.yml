@@ -1,6 +1,8 @@
 site_name: pm01
 extra_css: [style.css]
 repo_url: https://github.com/pmtmrw/pm101
+linkedin_url: https://www.linkedin.com/in/tobetwobees2b
+linkedin_connect_title: "Let's connect! 👋"
 site_url: https://pmtmrw.github.io/pm01
 site_description: pmtmrw blog
 site_author: pmtmrw
