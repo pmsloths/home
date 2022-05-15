@@ -6,7 +6,7 @@ linkedin_connect_title: "Let's connect! 👋"
 site_url: https://pmtmrw.github.io/pm01
 site_description: pmtmrw blog
 site_author: pmtmrw
-use_directory_urls: false
+use_directory_urls: true
 nav:
   - Trang chủ:
     - Index: index.md
@@ -39,10 +39,10 @@ plugins:
       languages:
         vi: 
           name: Việt Nam
-          site_name: pm101 Blog
+          site_name: Work-life balance for PMs
         en: 
           name: English
-          site_name: pm101 Blog EN
+          site_name: Work-life balance for PMs
       nav_translations:
         en:
           Trang chủ: Home page
