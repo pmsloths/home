@@ -1,11 +1,11 @@
-site_name: pm01
+site_name: pmsloths
 extra_css: [style.css]
-repo_url: https://github.com/pmtmrw/pm101
+repo_url: https://github.com/pmsloths/home
 linkedin_url: https://www.linkedin.com/in/tobetwobees2b
 linkedin_connect_title: "Let's connect! 👋"
-site_url: https://pmtmrw.github.io/pm01
-site_description: pmtmrw blog
-site_author: pmtmrw
+site_url: https://pmsloths.github.io/home/
+site_description: pmsloths blog
+site_author: pmsloths
 use_directory_urls: true
 nav:
   - Trang chủ:

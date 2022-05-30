@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: pm101
+    container_name: home
     volumes:
       - .:/src
     ports:
