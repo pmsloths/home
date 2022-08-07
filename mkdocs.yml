@@ -10,13 +10,13 @@ use_directory_urls: true
 nav:
   - Trang chủ:
     - Index: index.md
-  - Hướng dẫn:
+  - Quản lý sản phẩm:
       - Function as a Model VN: guide/function-classifier/function-classifier.md
       - Human Preprocessing VN: guide/function-preprocess/function-preprocessing.md
       - Drawing as a Model VN: guide/drawing-classifier/drawing.md
       - Outliers and Comfort VN: guide/finding-outliers/outliers.md
       - Drawing Features VN: guide/drawing-features/custom-features.md
-  - Api:
+  - Giải quyết vấn đề:
     - Models:
       - Classification: api/classification.md
       - Regression: api/regression.md
@@ -28,7 +28,7 @@ nav:
       - Common: api/common.md
       - Datasets: api/datasets.md
       - Rulers: api/rulers.md
-  - Ví dụ:
+  - Tỉnh thức:
     - Model Mining: examples/model-mining.md
     - Sử dụng: examples/usage.md
     - FAQ: examples/faq.md
@@ -45,17 +45,17 @@ plugins:
           site_name: Thinking fast and sloths 🦥
       nav_translations:
         en:
-          Trang chủ: Home page
-          Hướng dẫn: Guides
+          Trang chủ: Home
+          Quản lý sản phẩm: Product Management
           Function as a Model VN: Function as a Model EN
           Human Preprocessing VN: Human Preprocessing EN
           Drawing as a Model VN: Drawing as a Model EN
           Outliers and Comfort VN: Outliers and Comfort EN
           Drawing Features VN: Drawing Features EN
-          Api: Api EN
+          Giải quyết vấn đề: Problem Solving
           Models: Models EN
           Classification: Classification EN
-          Ví dụ: Examples
+          Tỉnh thức: Mindfulness
           Model Mining: Model Mining EN
           Sử dụng: Usage
           FAQ: FAQ EN
