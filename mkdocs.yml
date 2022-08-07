@@ -39,10 +39,10 @@ plugins:
       languages:
         vi: 
           name: Việt Nam
-          site_name: Work-life balance for PMs
+          site_name: Thinking fast and sloths 🦥
         en: 
           name: English
-          site_name: Work-life balance for PMs
+          site_name: Thinking fast and sloths 🦥
       nav_translations:
         en:
           Trang chủ: Home page
@@ -59,7 +59,7 @@ plugins:
           Model Mining: Model Mining EN
           Sử dụng: Usage
           FAQ: FAQ EN
-copyright: Copyright &copy; 2022 pmtmrw
+copyright: Copyright &copy; 2022 PM Sloths
 theme:
   name: material
   custom_dir: docs/theme/
