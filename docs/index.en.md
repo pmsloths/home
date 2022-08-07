@@ -1,6 +1,6 @@
 <img src="logo.png" width=225 align="right">
 
-# Human Learn hahaha
+# Human Learn hahahaha
 
 > Machine Learning models should play by the rules, literally.
 
