@@ -17,17 +17,8 @@ nav:
       - Outliers and Comfort VN: guide/finding-outliers/outliers.md
       - Drawing Features VN: guide/drawing-features/custom-features.md
   - Giải quyết vấn đề:
-    - Models:
-      - Classification: api/classification.md
-      - Regression: api/regression.md
-      - Outlier: api/outlier.md
-      - Preprocessing: api/preprocessing.md
-    - Interactive:
-      - Charts: api/interactive-charts.md
-    - Utility:
-      - Common: api/common.md
-      - Datasets: api/datasets.md
-      - Rulers: api/rulers.md
+    - Book Summary:
+      - Crack It: problemsolving/Test_CrackItSummary.md
   - Tỉnh thức:
     - Model Mining: examples/model-mining.md
     - Sử dụng: examples/usage.md
