@@ -60,7 +60,7 @@ theme:
     text: Ubuntu
     code: Ubuntu Mono
   favicon: icon.png
-  logo: icon.png
+  # - logo: icon.png
   features:
     - navigation.tabs
     # - toc.integrate
