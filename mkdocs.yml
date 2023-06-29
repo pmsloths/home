@@ -19,7 +19,7 @@ nav:
   - Giải quyết vấn đề:
     - Book Summary:
       - Crack It: problemsolving/Test_CrackItSummary.md
-  - Tỉnh thức:
+  - Giải trí:
     - Model Mining: examples/model-mining.md
     - Sử dụng: examples/usage.md
     - FAQ: examples/faq.md
@@ -46,7 +46,7 @@ plugins:
           Giải quyết vấn đề: Problem Solving
           Models: Models EN
           Classification: Classification EN
-          Tỉnh thức: Mindfulness
+          Giải trí: Relax
           Model Mining: Model Mining EN
           Sử dụng: Usage
           FAQ: FAQ EN
