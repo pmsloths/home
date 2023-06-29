@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+         <loc>https://pmsloths.github.io/home/</loc>
+         <lastmod>2023-06-29</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="vi" href="https://pmsloths.github.io/home/vi/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://pmsloths.github.io/home/en/"/>
+         
+    </url>
+    <url>
+         <loc>https://pmsloths.github.io/home/api/classification/</loc>
+         <lastmod>2023-06-29</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="vi" href="https://pmsloths.github.io/home/vi/api/classification/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://pmsloths.github.io/home/en/api/classification/"/>
+         
+    </url>
+    <url>
+         <loc>https://pmsloths.github.io/home/api/common/</loc>
+         <lastmod>2023-06-29</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="vi" href="https://pmsloths.github.io/home/vi/api/common/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://pmsloths.github.io/home/en/api/common/"/>
+         
+    </url>
+    <url>
+         <loc>https://pmsloths.github.io/home/api/datasets/</loc>
+         <lastmod>2023-06-29</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="vi" href="https://pmsloths.github.io/home/vi/api/datasets/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://pmsloths.github.io/home/en/api/datasets/"/>
+         
+    </url>
+    <url>
+         <loc>https://pmsloths.github.io/home/api/interactive-charts/</loc>
+         <lastmod>2023-06-29</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="vi" href="https://pmsloths.github.io/home/vi/api/interactive-charts/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://pmsloths.github.io/home/en/api/interactive-charts/"/>
+         
+    </url>
+    <url>
+         <loc>https://pmsloths.github.io/home/api/outlier/</loc>
+         <lastmod>2023-06-29</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="vi" href="https://pmsloths.github.io/home/vi/api/outlier/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://pmsloths.github.io/home/en/api/outlier/"/>
+         
+    </url>
+    <url>
+         <loc>https://pmsloths.github.io/home/api/preprocessing/</loc>
+         <lastmod>2023-06-29</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="vi" href="https://pmsloths.github.io/home/vi/api/preprocessing/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://pmsloths.github.io/home/en/api/preprocessing/"/>
+         
+    </url>
+    <url>
+         <loc>https://pmsloths.github.io/home/api/regression/</loc>
+         <lastmod>2023-06-29</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="vi" href="https://pmsloths.github.io/home/vi/api/regression/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://pmsloths.github.io/home/en/api/regression/"/>
+         
+    </url>
+    <url>
+         <loc>https://pmsloths.github.io/home/api/rulers/</loc>
+         <lastmod>2023-06-29</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="vi" href="https://pmsloths.github.io/home/vi/api/rulers/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://pmsloths.github.io/home/en/api/rulers/"/>
+         
+    </url>
+    <url>
+         <loc>https://pmsloths.github.io/home/examples/faq/</loc>
+         <lastmod>2023-06-29</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="vi" href="https://pmsloths.github.io/home/vi/examples/faq/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://pmsloths.github.io/home/en/examples/faq/"/>
+         
+    </url>
+    <url>
+         <loc>https://pmsloths.github.io/home/examples/model-mining/</loc>
+         <lastmod>2023-06-29</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="vi" href="https://pmsloths.github.io/home/vi/examples/model-mining/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://pmsloths.github.io/home/en/examples/model-mining/"/>
+         
+    </url>
+    <url>
+         <loc>https://pmsloths.github.io/home/examples/usage/</loc>
+         <lastmod>2023-06-29</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="vi" href="https://pmsloths.github.io/home/vi/examples/usage/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://pmsloths.github.io/home/en/examples/usage/"/>
+         
+    </url>
+    <url>
+         <loc>https://pmsloths.github.io/home/guide/drawing-classifier/drawing/</loc>
+         <lastmod>2023-06-29</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="vi" href="https://pmsloths.github.io/home/vi/guide/drawing-classifier/drawing/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://pmsloths.github.io/home/en/guide/drawing-classifier/drawing/"/>
+         
+    </url>
+    <url>
+         <loc>https://pmsloths.github.io/home/guide/drawing-features/custom-features/</loc>
+         <lastmod>2023-06-29</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="vi" href="https://pmsloths.github.io/home/vi/guide/drawing-features/custom-features/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://pmsloths.github.io/home/en/guide/drawing-features/custom-features/"/>
+         
+    </url>
+    <url>
+         <loc>https://pmsloths.github.io/home/guide/finding-outliers/outliers/</loc>
+         <lastmod>2023-06-29</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="vi" href="https://pmsloths.github.io/home/vi/guide/finding-outliers/outliers/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://pmsloths.github.io/home/en/guide/finding-outliers/outliers/"/>
+         
+    </url>
+    <url>
+         <loc>https://pmsloths.github.io/home/guide/function-classifier/function-classifier/</loc>
+         <lastmod>2023-06-29</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="vi" href="https://pmsloths.github.io/home/vi/guide/function-classifier/function-classifier/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://pmsloths.github.io/home/en/guide/function-classifier/function-classifier/"/>
+         
+    </url>
+    <url>
+         <loc>https://pmsloths.github.io/home/guide/function-preprocess/function-preprocessing/</loc>
+         <lastmod>2023-06-29</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="vi" href="https://pmsloths.github.io/home/vi/guide/function-preprocess/function-preprocessing/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://pmsloths.github.io/home/en/guide/function-preprocess/function-preprocessing/"/>
+         
+    </url>
+    <url>
+         <loc>https://pmsloths.github.io/home/problemsolving/Test_CrackItSummary/</loc>
+         <lastmod>2023-06-29</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="vi" href="https://pmsloths.github.io/home/vi/problemsolving/Test_CrackItSummary/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://pmsloths.github.io/home/en/problemsolving/Test_CrackItSummary/"/>
+         
+    </url>
+    <url>
+         <loc>https://pmsloths.github.io/home/productmanagement/productdesign/</loc>
+         <lastmod>2023-06-29</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="vi" href="https://pmsloths.github.io/home/vi/productmanagement/productdesign/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://pmsloths.github.io/home/en/productmanagement/productdesign/"/>
+         
+    </url>
+    <url>
+         <loc>https://pmsloths.github.io/home/productmanagement/productdevelopment/</loc>
+         <lastmod>2023-06-29</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="vi" href="https://pmsloths.github.io/home/vi/productmanagement/productdevelopment/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://pmsloths.github.io/home/en/productmanagement/productdevelopment/"/>
+         
+    </url>
+    <url>
+         <loc>https://pmsloths.github.io/home/productmanagement/productlaunch/</loc>
+         <lastmod>2023-06-29</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="vi" href="https://pmsloths.github.io/home/vi/productmanagement/productlaunch/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://pmsloths.github.io/home/en/productmanagement/productlaunch/"/>
+         
+    </url>
+    <url>
+         <loc>https://pmsloths.github.io/home/productmanagement/productstrategy/</loc>
+         <lastmod>2023-06-29</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="vi" href="https://pmsloths.github.io/home/vi/productmanagement/productstrategy/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="https://pmsloths.github.io/home/en/productmanagement/productstrategy/"/>
+         
+    </url>
+</urlset>
